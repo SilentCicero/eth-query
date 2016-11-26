@@ -60,6 +60,13 @@ EthQuery.prototype.getWork =                             generateFnFor('eth_getW
 EthQuery.prototype.submitWork =                          generateFnFor('eth_submitWork')
 EthQuery.prototype.submitHashrate =                      generateFnFor('eth_submitHashrate')
 
+EthQuery.prototype.listening =                           generateFnFor('net_listening')
+EthQuery.prototype.peerCount =                           generateFnFor('net_peerCount')
+EthQuery.prototype.version =                             generateFnFor('net_version')
+
+EthQuery.prototype.clientVersion =                       generateFnFor('web3_clientVersion')
+EthQuery.prototype.sha3 =                                generateFnFor('web3_sha3')
+
 // network level
 
 EthQuery.prototype.sendAsync = function(opts, cb){
